@@ -34,6 +34,7 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    { name: 'heartbeat', use: { ...devices['Desktop Chrome'] }, grep: /@heartbeat/, retries: 0, workers: 1, },
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
