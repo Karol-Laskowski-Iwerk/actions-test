@@ -6,6 +6,7 @@ for (const path of pagesToCheck) {
   test(`@heartbeat page ${path} opens successfully`, async ({ page }) => {
     const response = await page.goto(path);
     expect(response?.status()).toBeLessThan(400);
-    await expect(page).toHaveTitle(/.*/);
+    await expect(page).toHaveTitle("Google");
+    await expect(page.locator('input[aria-label="Google Search"]')).toBeVisible();
   });
 }
