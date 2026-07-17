@@ -11,9 +11,6 @@ jobs:
     timeout-minutes: 20
     environment: development
 
-    env:
-      BASE_URL: ${{ vars.BASE_URL }}
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
