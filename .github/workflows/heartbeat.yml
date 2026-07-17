@@ -2,7 +2,7 @@ name: Heartbeat - Frontend Development
 
 on:
   schedule:
-    - cron: '*/4 * * * *'   # every minute, UTC
+    - cron: '*/6 * * * *'   # every 6 minutes, UTC
   workflow_dispatch:
 
 jobs:
